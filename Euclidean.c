@@ -1,3 +1,6 @@
+// 欧几里得算法
+#include<stdio.h>
+
 unsigned int Gcd(unsigned int M,unsigned int N)
 {
     unsigned int S;// submultiple 约数
