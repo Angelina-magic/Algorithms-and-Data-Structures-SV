@@ -24,7 +24,7 @@ unsigned long long cantor(int *list, unsigned long long len) {
             if (list[i]>list[k])
                 ++s;
         }
-        sum += s*Fac(len-i);
+        sum += s*Fac(len-i-1);
     }
 
     return sum;
