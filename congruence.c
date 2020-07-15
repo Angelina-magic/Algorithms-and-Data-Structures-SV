@@ -22,14 +22,13 @@ unsigned long long mod(char *a, unsigned long long m) {
 
 int main(void) {
     char a[100];
-    unsigned long long b, m;
+    unsigned long long m;
 
     printf("Input a:");
     gets(a);
     printf("Input m:");
     scanf("%llu", &m);
 
-    b = mod(a, m);
-    printf("%llu", b);
+    printf("%llu", mod(a, m));
     return 0;
 }
