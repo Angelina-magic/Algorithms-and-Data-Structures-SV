@@ -25,7 +25,7 @@ class Solution:
         intab = "abcdefghijklmnopqrstuvwxyz"
         outtab = "22233344455566677778889999"
         trans = str.maketrans(intab, outtab)
-        return [word for word in words if word.maketrans(trans)==num]
+        return [word for word in words if word.translate(trans)==num]
 
 
 num = "2"
