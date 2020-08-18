@@ -8,7 +8,9 @@ int* findClosestElements(int* arr, int arrSize, int k, int x, int* returnSize){
     *returnSize = k;
     int left = 0;
     int right = arrSize - 1;
+   
     while (right - left >= k) {
+       
         if (x * 2 <= arr[right] + arr[left]) {
             --right;
         } else {
